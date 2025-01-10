@@ -1,6 +1,6 @@
 // TEST CASE
 /*
-const getMessage = require('../getMessage');
+const getMessage = require('../6-get_message');
 const {assert} = require('chai');
 
 it('should return a message', () => {
