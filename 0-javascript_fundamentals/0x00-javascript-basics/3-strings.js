@@ -1,7 +1,7 @@
 // TEST CASE
 /*
 const assert = require('assert');
-const {a, b} = require('../index');
+const {a, b} = require('../3-strings');
 
 it('a should be a string', () => {
     assert.equal(typeof a, "string");
