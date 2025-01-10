@@ -1,5 +1,5 @@
-const
-const 
+const a = 16;
+const b = a;
 
 module.exports = { a, b }
 
