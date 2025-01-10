@@ -1,10 +1,8 @@
-const a = 8;
+const a = 8
 
 module.exports = a;
 
-
-// Test Case
-
+// TEST CASE
 /*
 const assert = require('assert');
 const a = require('../index');
