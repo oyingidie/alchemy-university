@@ -1,4 +1,4 @@
-const a = 12.5
+const a = 12.5;
 
 module.exports = a;
 
