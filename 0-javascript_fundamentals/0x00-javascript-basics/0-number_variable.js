@@ -8,6 +8,6 @@ it('the variable a should store a number', () => {
 });
 */
 
-const a = 8;
+const a = 8
 
 module.exports = a;
