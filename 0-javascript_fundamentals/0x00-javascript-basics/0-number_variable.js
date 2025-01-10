@@ -1,7 +1,3 @@
-const a = 8;
-
-module.exports = a;
-
 // TEST CASE
 /*
 const assert = require('assert');
@@ -11,3 +7,7 @@ it('the variable a should store a number', () => {
     assert.equal(typeof a, "number");
 });
 */
+
+const a = 8;
+
+module.exports = a;
