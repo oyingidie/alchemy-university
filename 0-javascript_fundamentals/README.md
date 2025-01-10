@@ -6,7 +6,6 @@ This covers the basics of programming through advanced topics like asynchronous 
 - Build, Search and Manipulate Data Structures
 - Writing Code to Communicate Within Networks
 
-
-
 **Skills:**
+
 `Master JavaScript` - `Coding Basics` - `Server Setup`
