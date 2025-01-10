@@ -8,5 +8,4 @@ This covers the basics of programming through advanced topics like asynchronous 
 
 <br/>
 
-**Skills:**
-`Master JavaScript` - `Coding Basics` - `Server Setup`
+**Skills:** `Master JavaScript` - `Coding Basics` - `Server Setup`
