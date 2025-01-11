@@ -19,7 +19,7 @@ describe('scream', () => {
 function scream(n) {
     let str = "";
 
-    for (let i = 0; i <= n; i++) {
+    for (let i = 0; i < n; i++) {
         str += "a";
     }
     return str;
