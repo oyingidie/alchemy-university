@@ -1,6 +1,6 @@
 // TEST CASE
 /*
-const getRandom = require('../10-random.js');
+const getRandom = require('../10-random');
 const {assert} = require('chai');
 
 it('should return a random number between 0 and 1', () => {
