@@ -19,4 +19,4 @@ it('a should not equal b', () => {
 const a = false;
 const b = true;
 
-module.exports = { a, b }
+module.exports = {a, b}
