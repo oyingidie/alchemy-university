@@ -25,5 +25,4 @@ function summation(n) {
 
     return sum;
 }
-
 module.exports = summation;
