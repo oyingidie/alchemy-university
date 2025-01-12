@@ -70,7 +70,7 @@ module.exports = smallerNumber;
 // TEST CASE 2
 /*
 const assert = require('assert');
-const actualMessage = require('../index');
+const actualMessage = require('../pset_0');
 const fakeName = require('../fakeName');
 
 const expectedMessage = `
@@ -92,7 +92,6 @@ it('should replace the name', () => {
         assert(true);
     }
 });
-
 */
 
 // CODE 2
@@ -112,3 +111,35 @@ const message = `
 
 module.exports = message;
 
+// TEST CASE 3
+/*
+const { assert } = require('chai');
+const checkNumber = require('../pset_0');
+
+describe('checkNumber', () => {
+    it('should return positive', () => {
+        assert.equal(checkNumber(15), 'positive');
+    });
+
+    it('should return negative', () => {
+        assert.equal(checkNumber(-5), 'negative');
+    });
+
+    it('should return zero', () => {
+        assert.equal(checkNumber(0), 'zero');
+    });
+})
+*/
+
+// CODE 3
+function checkNumber(num) {
+    if (num === 0) {
+        return "zero";
+    } else if (num > 0) {
+        return "positive";
+    } else {
+        return "negative";
+    }
+}
+
+module.exports = checkNumber;
