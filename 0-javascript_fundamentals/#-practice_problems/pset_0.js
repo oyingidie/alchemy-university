@@ -96,7 +96,6 @@ it('should replace the name', () => {
 */
 
 // CODE 2
-
 const fakeName = require('./fakeName');
 
 // FILE: fakeName.js
