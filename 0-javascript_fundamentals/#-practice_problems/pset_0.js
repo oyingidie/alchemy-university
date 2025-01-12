@@ -29,7 +29,7 @@ describe('isEven', () => {
 });
 */
 
-// SOLUTION 0
+// CODE 0
 function isEven(num) {
     if (num % 2 === 0) {
         return true;
@@ -39,3 +39,30 @@ function isEven(num) {
 }
 
 module.exports = isEven;
+
+// TEST CASE 1
+/*
+const { assert } = require('chai');
+const smallerNumber = require('../pset_0');
+
+describe('smallerNumber', () => {
+    it('should return the smaller number', () => {
+        assert.equal(smallerNumber(3, 5), 3);
+    });
+
+    it('should return the smaller number', () => {
+        assert.equal(smallerNumber(10, 4), 4);
+    });
+})
+*/
+
+// CODE 1
+function smallerNumber(num1, num2) {
+    if (num2 > num1) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+
+module.exports = smallerNumber;
