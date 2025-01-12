@@ -29,7 +29,7 @@ describe('isEven', () => {
 });
 */
 
-// PROBLEM 0
+// SOLUTION 0
 function isEven(num) {
     if (num % 2 === 0) {
         return true;
