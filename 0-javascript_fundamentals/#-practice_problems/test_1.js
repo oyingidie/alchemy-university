@@ -86,7 +86,6 @@ describe('countVowels', () => {
             assert.equal(countVowels('APPLE'), 2);
         });
     })
-    
 
     describe('lowercase vowels', () => {
         it('should count all lowercase vowels', () => {
@@ -97,4 +96,23 @@ describe('countVowels', () => {
             assert.equal(countVowels('apple'), 2);
         });
     })
+})
+
+// TEST CASE 4
+
+const { assert } = require('chai');
+const reverse = require('../pset_1');
+
+describe('reverse', () => {
+    it('should return an empty string', () => {
+        assert.equal(reverse(""), "");
+    });
+
+    it('should reverse a short string', () => {
+        assert.equal(reverse('cat'), 'tac');
+    });
+
+    it('should reverse a long string', () => {
+        assert.equal(reverse('macintosh'), 'hsotnicam');
+    });
 })
