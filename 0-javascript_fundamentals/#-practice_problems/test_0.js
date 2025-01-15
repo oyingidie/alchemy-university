@@ -42,7 +42,6 @@ describe('smallerNumber', () => {
         assert.equal(smallerNumber(10, 4), 4);
     });
 })
-*/
 
 // TEST CASE 2
   
@@ -88,7 +87,7 @@ describe('checkNumber', () => {
         assert.equal(checkNumber(0), 'zero');
     });
 })
-*/
+
 
 // TEST CASE 4
   
