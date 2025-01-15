@@ -25,7 +25,7 @@ describe('order', () => {
 const order = {
     pizzas: 4,
     extraCheese: false,
-    deliveryInstructions: "Pick up at the store"
+    deliveryInstructions: "Pick up at the store, please."
 };
 
 module.exports = order;
