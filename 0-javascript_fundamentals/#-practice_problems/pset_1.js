@@ -7,3 +7,19 @@ function shortestString(str1, str2) {
 }
 
 module.exports = shortestString;
+
+// CODE 1
+
+function halfValue(numbers) {
+    const newArray = [];
+    let halved = 0; 
+
+    for (let i = 0; i < numbers.length; i++) {
+        halved = Math.round(numbers[i] / 2);
+        newArray.push(halved);
+    }
+
+    return newArray;
+}
+
+module.exports = halfValue;
