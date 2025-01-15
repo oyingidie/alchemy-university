@@ -19,7 +19,7 @@ describe('removeSecret', () => {
 */
 
 function removeSecret(object) {
-    delete object.secret;
+    delete object["secret"];
 }
 
 module.exports = removeSecret;
