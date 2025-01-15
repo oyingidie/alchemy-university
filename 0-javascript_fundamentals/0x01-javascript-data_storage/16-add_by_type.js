@@ -32,7 +32,18 @@ describe('numberOfPizzas', () => {
 });
 */
 
-const ORDER_TYPES = require('../orderTypes');
+const ORDER_TYPES = require('./orderTypes');
+// FILE: orderTypes.js
+/* const ORDER_TYPES = {
+    PIZZA: 0,
+    WINGS: 1,
+    SALAD: 2,
+    BURGER: 3,
+    FRIES: 4,
+    SANDWICH: 5
+}
+
+module.exports = ORDER_TYPES; */
 
 function numberOfPizzas(orders) {
     let total = 0;
