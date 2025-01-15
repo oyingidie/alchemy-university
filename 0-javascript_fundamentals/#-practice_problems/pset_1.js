@@ -39,3 +39,22 @@ function countC(str) {
 }
 
 module.exports = countC;
+
+// CODE 3
+
+function countVowels(str) {
+    let count = 0;
+    const vowels = ["A", "E", "I", "O", "U"];
+
+    for (let i = 0; i < str.length; i++) {
+        const letter = str[i].toUpperCase();
+
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+module.exports = countVowels;
