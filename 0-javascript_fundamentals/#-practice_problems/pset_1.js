@@ -58,3 +58,17 @@ function countVowels(str) {
 }
 
 module.exports = countVowels;
+
+// CODE 4
+
+function reverse(string) {
+    let reversal = "";
+
+    for (let i = string.length - 1; i >= 0; i--) {
+        reversal += string[i];
+    }
+
+    return reversal;
+}
+
+module.exports = reverse;
