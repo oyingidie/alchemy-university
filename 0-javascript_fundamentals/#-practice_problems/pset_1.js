@@ -72,3 +72,17 @@ function reverse(string) {
 }
 
 module.exports = reverse;
+
+// CODE 5
+
+function isPalindrome(string) {
+    let mirrorString = "";
+
+    for (let i = string.length - 1; i >= 0; i--) {
+        mirrorString += string[i];
+    }
+
+    return string === mirrorString;
+}
+
+module.exports = isPalindrome;
