@@ -86,3 +86,17 @@ function isPalindrome(string) {
 }
 
 module.exports = isPalindrome;
+
+// CODE 6
+
+function sumTogether(arr1, arr2) {
+    const newSingleArray = [];
+
+    for (let i = 0; i < arr1.length; i++) {
+        newSingleArray.push(arr1[i] + arr2[i]);
+    }
+
+    return newSingleArray;
+}
+
+module.exports = sumTogether;
