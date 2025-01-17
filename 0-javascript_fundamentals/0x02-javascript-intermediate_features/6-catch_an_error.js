@@ -22,9 +22,7 @@ describe('catchError', () => {
 function catchError(fn) {
     try {
         fn();
-    }
-
-    catch(exception) {}
+    } catch(error) {}
 }
 
 module.exports = catchError;
