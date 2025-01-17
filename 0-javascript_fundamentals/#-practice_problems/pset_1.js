@@ -100,3 +100,21 @@ function sumTogether(arr1, arr2) {
 }
 
 module.exports = sumTogether;
+
+// CODE 7
+
+function countElements(elements) {
+    const object = {};
+
+    for (const key of elements) {
+        if (!object[key]) {
+            object[key] = 1;
+        } else {
+            object[key]++;
+        }
+    }
+
+    return object;
+}
+
+module.exports = countElements;
