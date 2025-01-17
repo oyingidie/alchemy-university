@@ -15,13 +15,13 @@ describe('canBreathe', () => {
     describe('when not above water', () => {
         describe('and not connected', () => {
             it('should not be able to breathe', () => {
-                assert.equal(canBreathe(true, false, false), false);
+                assert.equal(canBreathe(false, true, false), false);
                 assert.equal(canBreathe(false, false, false), false);
             });
         });
         describe('and there is no oxygen', () => {
             it('should not be able to breathe', () => {
-                assert.equal(canBreathe(false, true, false), false);
+                assert.equal(canBreathe(true, false, false), false);
                 assert.equal(canBreathe(false, false, false), false);
             });
         });
