@@ -118,3 +118,23 @@ function countElements(elements) {
 }
 
 module.exports = countElements;
+
+// CODE 8
+
+function playerHandScore(hand) {
+    let score = 0;
+
+    const cardPoints = {
+        "K": 4,
+        "Q": 3,
+        "J": 2
+    }
+
+    for (let i = 0; i < hand.length; i++) {
+        score += cardPoints[hand[i]];
+    }
+
+    return score;
+}
+
+module.exports = playerHandScore;
