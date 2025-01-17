@@ -32,3 +32,14 @@ describe('catchError', () => {
 });
 */
 
+function catchError(fn) {
+    try {
+        fn();
+    } catch(error) {
+        return error;
+    }
+
+    return false;
+}
+
+module.exports = catchError;
