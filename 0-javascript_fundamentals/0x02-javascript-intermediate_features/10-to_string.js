@@ -27,6 +27,8 @@ describe('combineToString', () => {
 
 function combineToString(a, b) {
     const string = b.toString();
+    // IMPLICIT
+    /* const string = "" + b; */
 
     return a + string;
 }
