@@ -35,7 +35,7 @@ describe('catchError', () => {
 function catchError(fn) {
     try {
         fn();
-    } catch(error) {
+    } catch (error) {
         return error;
     }
 
