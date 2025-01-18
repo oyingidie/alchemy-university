@@ -14,3 +14,10 @@ describe('thisName', () => {
 });
 */
 
+function thisName() {
+    return this.name;
+}
+
+const boundFunction = thisName.bind({name: "Bob"});
+
+module.exports = boundFunction;
