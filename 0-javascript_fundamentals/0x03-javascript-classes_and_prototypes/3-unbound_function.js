@@ -31,6 +31,7 @@ describe('Celebrity', () => {
 */
 
 const fetchAge = require('./fetchAge');
+// FILE: fetchAge.js
 
 function Celebrity(name) {
     this.name = name;
