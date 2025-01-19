@@ -46,7 +46,7 @@ module.exports = fetchAge; */
 function Celebrity(name) {
     this.name = name;
 
-    fetchAge(this.name, function (age) {
+    fetchAge(this.name, (age) => {
         this.age = age;
     });
 }
