@@ -32,6 +32,16 @@ describe('Celebrity', () => {
 
 const fetchAge = require('./fetchAge');
 // FILE: fetchAge.js
+/* const celebrities = {
+    'Will Smith': 51,
+    'Matt Damon': 49,
+}
+
+function fetchAge(name, cb) {
+    cb(celebrities[name]);
+}
+
+module.exports = fetchAge; */
 
 function Celebrity(name) {
     this.name = name;
