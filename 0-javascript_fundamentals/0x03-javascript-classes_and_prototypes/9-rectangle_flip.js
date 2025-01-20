@@ -1,8 +1,8 @@
 // TEST CASE
 /*
 const { assert } = require('chai');
-const Rectangle = require('../9-rectangle_flip');
-const Shape = require('../5-move_shape');
+const Rectangle = require('../Rectangle');
+const Shape = require('../Shape');
 
 describe('Rectangle', () => {
     let rectangle;
@@ -38,4 +38,34 @@ describe('Rectangle', () => {
         });
     });
 });
+
+describe('Shape', () => {
+    let shape;
+    describe('instance', () => {
+        beforeEach(() => {
+            shape = new Shape(0,0);
+        });
+        it('should not have a flip function', () => {
+            assert(!shape.flip, "Did not expect to find a function flip on shape");
+        });
+    });
+});
 */
+
+const Shape = require('./5-move_shape');
+
+function Rectangle(x, y, height, width) {
+    Shape.call(this, x, y);
+    this.height = height;
+    this.width = width;
+}
+
+Rectangle.prototype = Object.create(Shape.prototype);
+
+Rectangle.prototype.flip = function() {
+    const temp = this.width;
+    this.width = this.height;
+    this.height = temp; 
+}
+
+module.exports = Rectangle;
