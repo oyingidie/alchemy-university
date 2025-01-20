@@ -38,7 +38,8 @@ function Shape(x, y) {
 
 Shape.prototype.move = function(x, y) {
     // move the shape
-
+    this.position.x += x;
+    this.position.y += y;
 }
 
 module.exports = Shape;
