@@ -23,6 +23,17 @@ describe('Circle', () => {
 */
 
 const Shape = require('./Shape');
+// FILE: Shape.js
+/* function Shape(x, y) {
+    this.position = {x, y};
+}
+
+Shape.prototype.move = function(x, y) {
+    this.position.x += x;
+    this.position.y += y;
+}
+
+module.exports = Shape; */
 
 function Circle(x, y, radius) {
     Shape.call(this,/* pass arguments to shape */ x, y);
