@@ -29,3 +29,16 @@ describe('Shape Instance', () => {
     });
 });
 */
+
+// Our Shape "Constructor"
+function Shape(x, y) {
+    // store x and y in this.position
+    this.position = {x, y};
+}
+
+Shape.prototype.move = function(x, y) {
+    // move the shape
+
+}
+
+module.exports = Shape;
