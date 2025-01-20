@@ -1,7 +1,7 @@
 // TEST CASE
 /*
 const { assert } = require('chai');
-const Hero = require('../10-Hero');
+const Hero = require('../10-hero');
 
 describe('new Hero', () => {
     const hero = new Hero();
