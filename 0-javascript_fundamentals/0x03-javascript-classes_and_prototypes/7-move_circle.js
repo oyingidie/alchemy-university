@@ -36,3 +36,14 @@ describe('Circle', () => {
     });
 }); 
 */
+
+const Shape = require('./5-move_shape');
+
+function Circle(x, y, radius) {
+    Shape.call(this, x, y);
+    this.radius = radius;
+}
+
+Circle.prototype = Object.create(Shape.prototype);
+
+module.exports = Circle;
