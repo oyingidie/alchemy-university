@@ -61,7 +61,7 @@ describe('new Hero', () => {
 });
 */
 
-const Hero = require('./Hero');
+const Hero = require('./11-take_damage');
 
 class Warrior extends Hero {
     constructor() {
