@@ -52,7 +52,9 @@ const MONTHS = [
 ];
 
 function sortByMonth(events) {
-    
+    events.sort((a, b) => {
+        return MONTHS.indexOf(a.month) - MONTHS.indexOf(b.month);
+    });
 }
 
 module.exports = sortByMonth;
