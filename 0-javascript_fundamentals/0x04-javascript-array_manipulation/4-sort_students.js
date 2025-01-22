@@ -1,7 +1,7 @@
 // TEST CASE
 /*
 const { assert } = require('chai');
-const sortStudents = require('../sortStudents');
+const sortStudents = require('../4-sort_students');
 
 describe('sortStudents', () => {
     it('should sort graduated student to the top', () => {
