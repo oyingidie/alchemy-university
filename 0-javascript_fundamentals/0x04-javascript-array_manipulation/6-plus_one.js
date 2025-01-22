@@ -14,3 +14,8 @@ describe('plus one', () => {
 });
 */
 
+function plusOne(arr) {
+    return arr.map(i => i + 1);
+}
+
+module.exports = plusOne;
