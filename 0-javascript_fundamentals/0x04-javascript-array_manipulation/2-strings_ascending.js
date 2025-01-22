@@ -1,10 +1,10 @@
 // TEST CASE
 /*
 const { assert } = require('chai');
-const sortStringsUp = require('../sortStringsUp');
+const sortStringsUp = require('../2-strings_ascending');
 
 describe('sortStringsUp', () => {
-    it('should mantain sort order for sorted strings', () => {
+    it('should maintain sort order for sorted strings', () => {
         let actual = ['a', 'b', 'c'];
         sortStringsUp(actual);
         const expected = ['a', 'b', 'c'];
