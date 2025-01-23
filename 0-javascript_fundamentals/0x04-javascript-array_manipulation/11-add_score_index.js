@@ -1,6 +1,6 @@
 // TEST CASE
 /*
-const addScore = require('../addScore');
+const addScore = require('../11-add_score_index');
 const { assert } = require('chai');
 
 describe('addScore', () => {
