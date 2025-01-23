@@ -20,7 +20,8 @@ describe('shortStrings', () => {
 */
 
 function shortStrings(array) {
-    return array.filter(element => element.length <= 3);
+    return array.filter(string =>
+        string.length <= 3);
 }
 
 module.exports = shortStrings;
