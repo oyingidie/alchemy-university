@@ -18,3 +18,11 @@ describe('unique', () => {
     });
 });
 */
+
+function unique(array) {
+    return array.filter((element, i) => {
+        return array.indexOf(element) === i;
+    });
+}
+
+module.exports = unique;
