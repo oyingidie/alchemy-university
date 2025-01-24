@@ -1,5 +1,5 @@
 // TEST CASE
-const factorial = require('../factorial');
+const factorial = require('../0-base_case');
 const { assert } = require('chai');
 
 describe('factorial', () => {
