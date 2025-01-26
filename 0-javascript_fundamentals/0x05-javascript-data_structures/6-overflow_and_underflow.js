@@ -53,3 +53,32 @@ describe('Stack', function () {
 });
 */
 
+const { MAX_STACK_SIZE } = require('./config');
+
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+    push(item) {
+        if (this.items.length === MAX_STACK_SIZE) {
+            throw new Error("The stack will overflow!");
+        }
+
+        this.items.push(item);
+    }
+    pop() {
+        if (!this.items.length) {
+            throw new Error("Underflowing the stack?!")
+        }
+        
+        return this.items.pop();
+    }
+    isEmpty() {
+        
+    }
+    peek() {
+        
+    }
+}
+
+module.exports = Stack;
