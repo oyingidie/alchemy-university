@@ -67,7 +67,7 @@ class Stack {
         this.items.push(item);
     }
     pop() {
-        if (!this.items.length) {
+        if (this.items.length === 0) {
             throw new Error("Underflowing the stack?!")
         }
         
