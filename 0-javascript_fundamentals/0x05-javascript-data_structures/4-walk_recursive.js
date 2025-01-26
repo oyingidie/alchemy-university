@@ -1,6 +1,6 @@
 // TEST CASE
 /*
-const walk = require('../walk');
+const walk = require('../4-walk_recursive');
 const { assert } = require('chai');
 
 describe('Walk', () => {
