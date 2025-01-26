@@ -45,6 +45,7 @@ class Warrior extends Hero {
         super(number);
         this.rage = 0;
     }
+    
     takeDamage(number) {
         super.takeDamage(number);
         this.rage++;
