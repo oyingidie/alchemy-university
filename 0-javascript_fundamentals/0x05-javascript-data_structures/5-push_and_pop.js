@@ -47,13 +47,9 @@ class Stack {
         return this.items.pop();
     }
     
-    isEmpty() {
-        
-    }
+    isEmpty() {}
     
-    peek() {
-        
-    }
+    peek() {}
 }
 
 module.exports = Stack;
