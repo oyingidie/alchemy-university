@@ -41,7 +41,7 @@ describe('Operations Manager', () => {
 });
 */
 
-const Stack = require('./Stack');
+const Stack = require('./7-isempty_and_peek');
 
 class OperationManager {
     constructor() {
