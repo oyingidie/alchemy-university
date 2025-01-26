@@ -28,7 +28,7 @@ describe('Operations Manager', () => {
 });
 */
 
-const Stack = require('./Stack');
+const Stack = require('./7-isempty_and_peek');
 
 class OperationManager {
     constructor() {
@@ -40,17 +40,11 @@ class OperationManager {
         this.operations.push(operation);
     }
 
-    undo() {
-        
-    }
+    undo() {}
 
-    redo() {
-        
-    }
+    redo() {}
 
-    redoAll() {
-        
-    }
+    redoAll() {}
 }
 
 module.exports = OperationManager;
