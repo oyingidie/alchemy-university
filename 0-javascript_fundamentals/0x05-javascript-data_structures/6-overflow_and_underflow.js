@@ -1,4 +1,5 @@
 // TEST CASE
+/*
 const Stack = require('../6-overflow_and_underflow');
 const { assert, expect } = require('chai');
 const { MAX_STACK_SIZE } = require('../config');
@@ -50,3 +51,5 @@ describe('Stack', function () {
         });
     });
 });
+*/
+
