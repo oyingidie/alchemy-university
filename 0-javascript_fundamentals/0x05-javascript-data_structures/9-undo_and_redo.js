@@ -1,6 +1,6 @@
 // TEST CASE
 /*
-const OperationsManager = require('../OperationsManager');
+const OperationsManager = require('../9-undo_and_redo');
 const { assert } = require('chai');
 
 let operationsManager;
