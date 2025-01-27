@@ -79,6 +79,7 @@ class LinkedList {
         while (tail.next) {
             tail = tail.next;
         }
+        
         tail.next = node;
     }
 }
