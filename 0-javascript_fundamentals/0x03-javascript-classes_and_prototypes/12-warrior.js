@@ -19,8 +19,6 @@ describe('new Warrior', () => {
 
 const Hero = require('./Hero');
 
-class Warrior extends Hero {
-
-}
+class Warrior extends Hero {}
 
 module.exports = Warrior;
