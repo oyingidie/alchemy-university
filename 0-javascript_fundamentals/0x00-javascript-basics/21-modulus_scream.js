@@ -28,6 +28,7 @@ function scream(n) {
             str += "a";
         }
     }
+    
     return str;
 }
 
