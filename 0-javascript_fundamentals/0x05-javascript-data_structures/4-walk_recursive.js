@@ -49,7 +49,6 @@ describe('Walk', () => {
 
 function walk(node) {
     if (!node.next) return node;
-
     return walk(node.next);
 }
 
