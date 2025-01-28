@@ -14,7 +14,7 @@ module.exports = eitherNotBoth;
 // CODE 1
 
 function fizzBuzz(numbers) {
-    let swapString = ""
+    let swapString = "";
 
     for (const number of numbers) {
         if (number % 3 === 0 && number % 5 === 0) {
