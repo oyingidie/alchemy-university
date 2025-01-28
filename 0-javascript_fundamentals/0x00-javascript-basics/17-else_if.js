@@ -28,6 +28,7 @@ function canAccess(purchasedSubscription, freeTrial) {
     } else if (freeTrial) {
         return true;
     }
+    
     return false;
 }
 
