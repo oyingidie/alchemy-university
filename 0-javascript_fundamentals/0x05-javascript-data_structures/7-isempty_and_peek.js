@@ -86,7 +86,6 @@ class Stack {
         if (this.items.length === MAX_STACK_SIZE) {
             throw new Error("The stack will overflow!");
         }
-
         this.items.push(item);
     }
     
