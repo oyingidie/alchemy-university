@@ -18,7 +18,6 @@ describe('splitAtX', () => {
 
 function splitAtX(string) {
     const indexAtX = string.indexOf("x");
-
     const firstSplit = string.slice(0, indexAtX);
     const secondSplit = string.slice(indexAtX + 1);
 
