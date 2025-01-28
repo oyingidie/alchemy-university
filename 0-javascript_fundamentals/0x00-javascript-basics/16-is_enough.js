@@ -29,6 +29,7 @@ function isEnough(cost, money) {
     if (cost <= money) {
         return true;
     }
+    
     return false;
 }
 
