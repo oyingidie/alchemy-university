@@ -1,6 +1,6 @@
 // TEST CASE
 /*
-const runCallback = require('../runCallback');
+const runCallback = require('../1-run_callback_async');
 const { assert } = require('chai');
 
 describe('Run Callback Async', () => {
