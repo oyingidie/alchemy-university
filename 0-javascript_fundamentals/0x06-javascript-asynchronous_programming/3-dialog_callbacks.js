@@ -40,8 +40,15 @@ class Dialog {
         // invoke the callback
         for (let i = 0; i < this.callbackFunctions.length; i++) {
             this.callbackFunctions[i]();
-        };
+        }
+    } // OR
+    /*
+    close() {
+        this.callbackFunctions.forEach((callbackFn) => {
+            callbackFn();
+        });
     }
+    */
 }
 
 module.exports = Dialog;
