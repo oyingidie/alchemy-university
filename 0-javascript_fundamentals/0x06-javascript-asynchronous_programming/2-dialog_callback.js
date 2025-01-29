@@ -16,3 +16,16 @@ describe('Dialog', () => {
 });
 */
 
+class Dialog {
+    onClose(callbackFunction) {
+        // store the callback
+        this.callbackFunction = callbackFunction; 
+    }
+
+    close() {
+        // invoke the callback
+        this.callbackFunction();
+    }
+}
+
+module.exports = Dialog;
