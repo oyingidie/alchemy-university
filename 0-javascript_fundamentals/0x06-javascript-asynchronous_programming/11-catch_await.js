@@ -3,7 +3,7 @@
 const lab = require('../lab');
 const messaging = require('../messaging');
 const logs = require('../logs');
-const handleResults = require('../handleResults');
+const handleResults = require('../11-catch_await');
 const { assert } = require('chai');
 
 describe('Lab Results', () => {
@@ -84,3 +84,19 @@ describe('Lab Results', () => {
     });
 });
 */
+
+const { getResults } = require('./lab');
+const { sendResults } = require('./messaging');
+const { logResponse, logError } = require('./logs');
+
+async function handleResults(patientId) {
+    try {
+        const results = await getResults(patientId);
+        const response = await sendResults(patientId, results);
+        await logResponse(response);
+    } catch (error) {
+        logError(error);
+    }
+}
+
+module.exports = handleResults;
