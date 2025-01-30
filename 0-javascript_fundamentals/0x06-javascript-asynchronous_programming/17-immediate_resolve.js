@@ -64,13 +64,22 @@ describe('Pact', function () {
 });
 */
 
+const status = {
+    PENDING = 0,
+    RESOLVED = 1,
+    REJECTED = 2
+};
+
 class Pact {
     // add methods to return on the instance
     constructor(executor) {
         this.thenCallbacks = [];
         this.catchCallbacks = [];
+        this.status = STATUS.PENDING;
 
         executor((value) => {
+            this.resolved = value;
+            this.status = STATUS.RESOLVED;
             this.thenCallbacks.forEach((thenCallback) => {
                 thenCallback(value);
             });
