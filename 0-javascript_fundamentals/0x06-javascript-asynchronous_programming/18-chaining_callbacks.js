@@ -72,7 +72,6 @@ class Pact {
                     resolve(callback(resolved));
                 })
             })
-
         } else if (this.status === STATUS.RESOLVED) {
             callback(this.resolved);
         }
