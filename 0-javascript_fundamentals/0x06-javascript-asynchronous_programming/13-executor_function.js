@@ -29,3 +29,15 @@ describe('Pact', function () {
 });
 */
 
+class Pact {
+    // add methods to return on the instance
+    constructor(executor) {
+        executor(() => {}, () => {});
+    }
+
+    then() {}
+
+    catch() {}
+}
+
+module.exports = Pact;
