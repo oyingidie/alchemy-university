@@ -64,10 +64,10 @@ describe('Pact', function () {
 });
 */
 
-const status = {
-    PENDING = 0,
-    RESOLVED = 1,
-    REJECTED = 2
+const STATUS = {
+    PENDING: 0,
+    RESOLVED: 1,
+    REJECTED: 2
 };
 
 class Pact {
@@ -87,17 +87,25 @@ class Pact {
             this.rejected = reason;
             this.status = STATUS.REJECTED;
             this.catchCallbacks.forEach((catchCallback) => {
-                catchCallback(value);
+                catchCallback(reason);
             });
         });
     }
 
     then(callback) {
-        this.thenCallbacks.push(callback);
+        if (this.status === STATUS.PENDING) {
+            this.thenCallbacks.push(callback);
+        } else if (this.status === STATUS.RESOLVED) {
+            callback(this.resolved);
+        }
     }
 
     catch(callback) {
-        this.catchCallbacks.push(callback);
+        if (this.status === STATUS.PENDING) {
+            this.catchCallbacks.push(callback);
+        } else if (this.status === STATUS.REJECTED) {
+            callback(this.rejected);
+        }
     }
 }
 
