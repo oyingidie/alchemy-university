@@ -70,8 +70,8 @@ class Pact {
             return new Pact((resolve, reject) => {
                 this.thenCallbacks.push((resolved) => {
                     resolve(callback(resolved));
-                })
-            })
+                });
+            });
         } else if (this.status === STATUS.RESOLVED) {
             callback(this.resolved);
         }
