@@ -83,7 +83,9 @@ class Pact {
             this.thenCallbacks.forEach((thenCallback) => {
                 thenCallback(value);
             });
-        }, (value) => {
+        }, (reason) => {
+            this.rejected = reason;
+            this.status = STATUS.REJECTED;
             this.catchCallbacks.forEach((catchCallback) => {
                 catchCallback(value);
             });
