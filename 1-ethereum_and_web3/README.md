@@ -11,3 +11,7 @@ This covers lessons from interactive coding challenges, videos, written guides, 
 - Mastering the Solidity Language
 - Core Solidity Concepts
 - How Smart Contracts are Governed
+
+<br/>
+
+**Skilss:** `Interview Ready` - `Master Solidity` - `Build Smart Contracts`
